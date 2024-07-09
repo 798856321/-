@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/simulation
+    username: root
+    password: 991218
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+      enabled: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+mybatis-plus:
+  global-config:
+    db-config:
+      insert-strategy: ignored
+      update-strategy: ignored
